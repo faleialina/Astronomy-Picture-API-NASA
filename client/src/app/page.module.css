@@ -3,4 +3,23 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  gap: 20px;
+}
+
+.input {
+  padding: 12px;
+  align-items: center;
+  border-radius: 6px;
+  border: 1px solid #CAD0DB;
+  color: #7B8499;
+  text-align: center;
+}
+
+.button {
+  width: 100px;
+  padding: 12px;
+  border-radius: 4px;
+  background: var(--blue-6, #4282bb);
+  color: var(--other-white, #FFF);
+  border-width: 0;
 }
