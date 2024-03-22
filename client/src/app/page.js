@@ -27,17 +27,23 @@ export default function Home() {
 
   return (
     <main className={styles.main}>
-      <img src={obj?.url} width={800} alt="Picture" />
+      <h1>{obj?.title}</h1>
+      <h3>{obj?.date}</h3>
+      <img src={obj?.url} alt="Picture" />
       <div>{obj?.url}</div>
+      <p>{obj?.explanation}</p>
+
 
       <div className={styles.wrap}>
         <input className={styles.input} type="date" id="start" name="trip-start" onChange={(e) => { setStartDate(e.target.value) }} />
         <button className={styles.button} onClick={sendData}>Click</button>
       </div>
 
-      <img src={objData?.url} width={800} alt="Picture" />
+      <h1>{objData?.title}</h1>
+      <h3>{objData?.date}</h3>
+      <img src={objData?.url} alt="Picture" />
       <div>{objData?.url}</div>
-
+      <p>{objData?.explanation}</p>
     </main>
   )
 };

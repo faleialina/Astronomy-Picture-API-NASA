@@ -1,17 +1,24 @@
 .main {
+  width: 1220px;
+  margin: auto;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   gap: 20px;
+  background-color: #cad0db;
+}
+.wrap {
+  display: flex;
+  gap: 10px;
 }
 
 .input {
   padding: 12px;
   align-items: center;
   border-radius: 6px;
-  border: 1px solid #CAD0DB;
-  color: #7B8499;
+  border: 1px solid #cad0db;
+  color: #7b8499;
   text-align: center;
 }
 
@@ -20,6 +27,15 @@
   padding: 12px;
   border-radius: 4px;
   background: var(--blue-6, #4282bb);
-  color: var(--other-white, #FFF);
+  color: var(--other-white, #fff);
   border-width: 0;
+}
+
+.main img {
+  border-radius: 12px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 800px;
+  border-style: groove;
+  border-color: #fff;
 }
